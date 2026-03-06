@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR4Deaf Modules - Accessible VR Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <div class="flex items-center">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-blue-600">
+                            <path d="M18 3L34.5 13.5V22.5L18 33L1.5 22.5V13.5L18 3Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                            <path d="M18 33V22.5M18 22.5L34.5 13.5M18 22.5L1.5 13.5M18 3L34.5 13.5M18 3L1.5 13.5" stroke="currentColor" stroke-width="3" fill="none"/>
+                        </svg>
+                        <span class="text-xl font-bold ml-2 font-heading text-slate-900">VR4Deaf Platform</span>
+                    </div>
+                </div>
+                <nav class="hidden md:flex flex-1 justify-center">
+                    <ul class="flex space-x-8">
+                        <li>
+                            <a href="#" class="text-slate-600 hover:text-blue-600 font-medium">Home</a>
+                        </li>
+                        <li>
+                            <a href="#deafauth" class="text-slate-600 hover:text-blue-600 font-medium">DeafAUTH</a>
+                        </li>
+                        <li>
+                            <a href="#pinksync" class="text-slate-600 hover:text-blue-600 font-medium">PinkSync</a>
+                        </li>
+                        <li>
+                            <a href="#fibonrose" class="text-slate-600 hover:text-blue-600 font-medium">Fibonrose</a>
+                        </li>
+                        <li>
+                            <a href="#compliance" class="text-slate-600 hover:text-blue-600 font-medium">VR Compliance</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold mb-6">VR4Deaf Platform Modules</h1>
+            
+            <div class="mb-8">
+                <p class="text-lg text-gray-700 mb-4">
+                    The VR4Deaf platform is built on the MBTQ Platform architecture with three core pillars, 
+                    providing comprehensive vocational rehabilitation services and workforce development 
+                    for the deaf community.
+                </p>
+                
+                <p class="text-lg text-gray-700">
+                    Each module is independently accessible while sharing a common foundation
+                    of accessibility features, ASL resources, and deaf-first design principles.
+                </p>
+            </div>
+            
+            <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md mb-8">
+                <h2 class="text-xl font-bold mb-4">MBTQ Platform Modules</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <div class="bg-blue-500 hover:bg-blue-600 p-4 rounded-md transition-all">
+                        <h3 class="font-semibold text-lg">🔐 DeafAUTH</h3>
+                        <p class="text-sm text-gray-100 mt-1 mb-3">
+                            Authentication & identity management via Supabase
+                        </p>
+                        <a 
+                            href="https://github.com/MBTQ-dev/nextjs-deafauth"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="inline-block px-3 py-1 bg-white text-gray-800 rounded text-sm font-medium"
+                        >
+                            View DeafAUTH
+                        </a>
+                    </div>
+                    
+                    <div class="bg-purple-500 hover:bg-purple-600 p-4 rounded-md transition-all">
+                        <h3 class="font-semibold text-lg">⚡ PinkSync</h3>
+                        <p class="text-sm text-gray-100 mt-1 mb-3">
+                            Real-time synchronization & accessibility optimization
+                        </p>
+                        <a 
+                            href="https://github.com/MBTQ-dev/pinksync"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="inline-block px-3 py-1 bg-white text-gray-800 rounded text-sm font-medium"
+                        >
+                            View PinkSync
+                        </a>
+                    </div>
+                    
+                    <div class="bg-green-500 hover:bg-green-600 p-4 rounded-md transition-all">
+                        <h3 class="font-semibold text-lg">⭐ Fibonrose</h3>
+                        <p class="text-sm text-gray-100 mt-1 mb-3">
+                            Reputation & trust scoring system
+                        </p>
+                        <a 
+                            href="https://github.com/MBTQ-dev/fibonrose"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="inline-block px-3 py-1 bg-white text-gray-800 rounded text-sm font-medium"
+                        >
+                            View Fibonrose
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-4 text-center">
+                    <div class="inline-flex items-center">
+                        <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                        <span class="text-xs">All services feature deaf-first accessibility & ASL support</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="deafauth" class="mt-12 pt-2 -mt-2">
+                <div class="bg-white shadow-md rounded-lg p-6 border-t-4 border-blue-500 mb-8">
+                    <h2 class="text-2xl font-bold mb-3">🔐 DeafAUTH - Authentication Module</h2>
+                    <p class="text-gray-700 mb-4">
+                        Supabase-powered authentication system designed specifically for deaf-first 
+                        accessibility. Handles user identity, session management, and secure 
+                        authentication flows with OAuth 2.0 support.
+                    </p>
+                    
+                    <h3 class="font-medium text-gray-800 mb-2">Key Features:</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>OAuth 2.0 authentication</li>
+                        <li>JWT token management</li>
+                        <li>User profile management</li>
+                        <li>Event tracking and audit logs</li>
+                    </ul>
+                    
+                    <div class="bg-blue-50 p-4 rounded-md">
+                        <h4 class="font-medium text-blue-800 mb-2">Authentication Flow</h4>
+                        <div class="grid grid-cols-4 gap-2 text-center">
+                            <div class="bg-blue-100 p-2 rounded">
+                                <span class="text-sm font-medium text-blue-800">Sign In</span>
+                            </div>
+                            <div class="bg-blue-100 p-2 rounded">
+                                <span class="text-sm font-medium text-blue-800">Verify</span>
+                            </div>
+                            <div class="bg-blue-100 p-2 rounded">
+                                <span class="text-sm font-medium text-blue-800">Session</span>
+                            </div>
+                            <div class="bg-blue-100 p-2 rounded">
+                                <span class="text-sm font-medium text-blue-800">Profile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="pinksync" class="pt-2 -mt-2">
+                <div class="bg-white shadow-md rounded-lg p-6 border-t-4 border-purple-500 mb-8">
+                    <h2 class="text-2xl font-bold mb-3">⚡ PinkSync - Real-time Sync Module</h2>
+                    <p class="text-gray-700 mb-4">
+                        Real-time data synchronization and accessibility optimizations. Ensures 
+                        seamless communication between services with accessibility-first design 
+                        principles and visual notification systems.
+                    </p>
+                    
+                    <h3 class="font-medium text-gray-800 mb-2">Key Features:</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Real-time data synchronization</li>
+                        <li>WebSocket/Socket.io integration</li>
+                        <li>Accessibility-optimized messaging</li>
+                        <li>Visual notification system</li>
+                    </ul>
+                    
+                    <div class="bg-purple-50 p-4 rounded-md">
+                        <h4 class="font-medium text-purple-800 mb-2">Sync Process</h4>
+                        <div class="grid grid-cols-4 gap-2 text-center">
+                            <div class="bg-purple-100 p-2 rounded">
+                                <span class="text-sm font-medium text-purple-800">Connect</span>
+                            </div>
+                            <div class="bg-purple-100 p-2 rounded">
+                                <span class="text-sm font-medium text-purple-800">Listen</span>
+                            </div>
+                            <div class="bg-purple-100 p-2 rounded">
+                                <span class="text-sm font-medium text-purple-800">Update</span>
+                            </div>
+                            <div class="bg-purple-100 p-2 rounded">
+                                <span class="text-sm font-medium text-purple-800">Notify</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="fibonrose" class="pt-2 -mt-2">
+                <div class="bg-white shadow-md rounded-lg p-6 border-t-4 border-green-500 mb-8">
+                    <h2 class="text-2xl font-bold mb-3">⭐ Fibonrose - Trust Scoring Module</h2>
+                    <p class="text-gray-700 mb-4">
+                        Fibonacci-based reputation and trust scoring system. Tracks user 
+                        contributions, community engagement, and builds trust metrics across 
+                        the platform ecosystem with badge issuance.
+                    </p>
+                    
+                    <h3 class="font-medium text-gray-800 mb-2">Key Features:</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Fibonacci-based scoring algorithm</li>
+                        <li>Badge issuance and tracking</li>
+                        <li>Contribution recording</li>
+                        <li>Community trust metrics</li>
+                    </ul>
+                    
+                    <div class="bg-green-50 p-4 rounded-md">
+                        <h4 class="font-medium text-green-800 mb-2">Trust Building</h4>
+                        <div class="grid grid-cols-4 gap-2 text-center">
+                            <div class="bg-green-100 p-2 rounded">
+                                <span class="text-sm font-medium text-green-800">Contribute</span>
+                            </div>
+                            <div class="bg-green-100 p-2 rounded">
+                                <span class="text-sm font-medium text-green-800">Score</span>
+                            </div>
+                            <div class="bg-green-100 p-2 rounded">
+                                <span class="text-sm font-medium text-green-800">Badge</span>
+                            </div>
+                            <div class="bg-green-100 p-2 rounded">
+                                <span class="text-sm font-medium text-green-800">Trust</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="compliance" class="pt-2 -mt-2">
+                <div class="bg-white shadow-md rounded-lg p-6 border-t-4 border-green-500 mb-8">
+                    <div class="flex justify-between items-start mb-3">
+                        <h2 class="text-2xl font-bold">VR Compliance & Workforce Module</h2>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Comprehensive vocational rehabilitation compliance tracking following 
+                        federal regulations (34 CFR Part 361) and WIOA standards. Supports 
+                        the complete VR process with accessibility-first design.
+                    </p>
+                    
+                    <h3 class="font-medium text-gray-800 mb-2">Key Features:</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>VR enrollment tracking</li>
+                        <li>IPE development support</li>
+                        <li>Service documentation</li>
+                        <li>Milestone monitoring</li>
+                        <li>Employment outcome tracking</li>
+                        <li>WIOA compliance management</li>
+                    </ul>
+                    
+                    <div class="p-6 bg-green-50 rounded-lg">
+                        <h4 class="text-xl font-bold mb-4 text-green-800">VR Process (34 CFR Part 361)</h4>
+                        <ol class="list-decimal pl-6 space-y-2">
+                            <li class="text-gray-700"><span class="font-semibold">Application and Intake:</span> Initial contact, information gathering, and needs assessment.</li>
+                            <li class="text-gray-700"><span class="font-semibold">Eligibility Determination:</span> Evaluation and assessment of qualification for VR services.</li>
+                            <li class="text-gray-700"><span class="font-semibold">Individualized Plan for Employment (IPE):</span> Developing a personalized roadmap for success.</li>
+                            <li class="text-gray-700"><span class="font-semibold">Service Provision:</span> Implementation of training, counseling, and support services.</li>
+                            <li class="text-gray-700"><span class="font-semibold">Employment and Follow-Up:</span> Job placement, retention support, and ongoing assistance.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-700 text-white p-6 rounded-lg">
+                <h2 class="text-xl font-bold mb-3">About VR4Deaf Platform</h2>
+                <p class="text-gray-300">
+                    The VR4Deaf platform is built on the MBTQ Platform architecture with three core pillars 
+                    (DeafAUTH, PinkSync, Fibonrose), providing comprehensive vocational rehabilitation services 
+                    and workforce development for the deaf community. Each module is designed to work independently 
+                    while sharing accessibility features and deaf-first design principles.
+                </p>
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-gray-800 p-3 rounded">
+                        <h3 class="font-medium mb-2 text-blue-300">Business Magician</h3>
+                        <p class="text-sm text-gray-400">Empowering deaf entrepreneurs through the complete business lifecycle</p>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded">
+                        <h3 class="font-medium mb-2 text-purple-300">Job Magician</h3>
+                        <p class="text-sm text-gray-400">Connecting deaf professionals with employment opportunities</p>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded">
+                        <h3 class="font-medium mb-2 text-green-300">VR4Deaf Pilot</h3>
+                        <p class="text-sm text-gray-400">Specialized vocational rehabilitation for deaf individuals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center gap-2">
+                        <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                            <path d="M18 3L34.5 13.5V22.5L18 33L1.5 22.5V13.5L18 3Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                            <path d="M18 33V22.5M18 22.5L34.5 13.5M18 22.5L1.5 13.5M18 3L34.5 13.5M18 3L1.5 13.5" stroke="currentColor" stroke-width="3" fill="none"/>
+                        </svg>
+                        <span class="text-lg font-bold">360 Magicians</span>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-400">
+                        Empowering deaf entrepreneurs and job seekers with accessible, technology-driven services.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-3">Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#business" class="text-gray-400 hover:text-white">Business Magician</a></li>
+                            <li><a href="#job" class="text-gray-400 hover:text-white">Job Magician</a></li>
+                            <li><a href="#vr4deaf" class="text-gray-400 hover:text-white">VR4Deaf</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-3">Resources</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">ASL Video Library</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Learning Center</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Success Stories</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-3">Company</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-700">
+                <p class="text-sm text-gray-400 text-center">
+                    &copy; 2025 360 Magicians. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
